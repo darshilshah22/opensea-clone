@@ -1,0 +1,57 @@
+.hero {
+  max-width: 100vw;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 150;
+  background-color: transparent;
+  padding-bottom: 2rem;
+}
+
+.hero-categories {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+.hero-categories li {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.hero-categories li.active,
+.hero-categories li:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+/* .slider {
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.slider-container {
+  border-radius: 10px;
+}
+
+.slider-container img {
+  height: 288px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider-arrow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.arrow-btn {
+  top: 45%;
+  z-index: 1;
+}
+.next {
+  float: right;
+} */
