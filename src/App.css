@@ -7,7 +7,7 @@
 
 .header::before {
   backdrop-filter: blur(60px);
-  background: linear-gradient(0deg, rgb(18, 18, 18) 5%, rgba(0, 0, 0, 0) 60%)
+  background: linear-gradient(0deg, rgb(18, 18, 18) 50%, rgba(0, 0, 0, 0) 80%)
     rgba(0, 0, 0, 0.5);
   content: "";
   position: absolute;

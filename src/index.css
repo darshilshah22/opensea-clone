@@ -10,6 +10,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Inter", sans-serif;
+  user-select: none;
 }
 
 body {
@@ -21,4 +22,13 @@ body {
 
 a {
   color: #fff;
+}
+
+button{
+  border: 0;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }

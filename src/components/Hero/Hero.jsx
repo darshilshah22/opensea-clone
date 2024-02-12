@@ -1,19 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./hero.css";
-import { categories } from "../../constants/constants";
-import ImgSlider from "../../containers/ImgSlider/ImgSlider";
+import { categories, items } from "../../constants/constants";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+function CustomSlide(props) {
+  const { index } = props;
+  return (
+    <div className="slide">
+      <div
+        key={index}
+        className="slide-image"
+        style={{
+          backgroundImage: `url(${items[index].image})`,
+        }}
+      ></div>
+      <div className="info">
+        <p className="name">{items[index].name}</p>
+        <p className="price">$350</p>
+      </div>
+    </div>
+  );
+}
 
 const Hero = () => {
-//   const settings = {
-//     dots: false,
-//     speed: 1000,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     arrows: false,
-//     infinite: true,
-//     autoplay: false,
-//     autoplaySpeed: 3000,
-//   };
+  const [sliderRef, setSliderRef] = useState(null);
+  const settings = {
+    dots: false,
+    speed: 1000,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    arrows: false,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="hero">
@@ -24,23 +64,25 @@ const Hero = () => {
           </li>
         ))}
       </ul>
-      <ImgSlider />
-      {/* <div
-        className="slides-carousel"
-        style={{ position: "relative", marginTop: "2rem" }}
-      >
-        <RenderArrows />
-        <Slider {...settings}>
+      <div className="slide-container">
+        <div className="controls">
+          <IoIosArrowBack
+            className="prev"
+            size={32}
+            onClick={sliderRef?.slickPrev}
+          />
+          <IoIosArrowForward
+            className="next"
+            size={32}
+            onClick={sliderRef?.slickNext}
+          />
+        </div>
+        <Slider ref={setSliderRef} {...settings}>
           {items.map((item, index) => (
-            <div className="slider-container" key={index} style={{margin: "0 2rem"}}>
-              <img
-                src="https://i.seadn.io/s/production/e1497539-472f-43ec-9d5b-477ca1558f2e.png?w=500&auto=format"
-                alt=""
-              />
-            </div>
+            <CustomSlide index={index} key={index} />
           ))}
         </Slider>
-      </div> */}
+      </div>
     </div>
   );
 };

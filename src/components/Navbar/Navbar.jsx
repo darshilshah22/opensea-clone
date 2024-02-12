@@ -3,6 +3,7 @@ import "./navbar.css";
 import { IoMdSearch, IoIosArrowBack } from "react-icons/io";
 import { MdWallet, MdOutlineShoppingCart } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMobileSearch, setIsMobileSearch] = useState(false);
@@ -141,6 +142,10 @@ const Navbar = () => {
       </div>
       <div className="cart backdrop">
         <MdOutlineShoppingCart size={24} className="icon" />
+      </div>
+
+      <div className="mobile-menu">
+        <FaBars />
       </div>
 
       {isMobileSearch && (

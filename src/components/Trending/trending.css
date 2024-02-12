@@ -1,0 +1,120 @@
+.trending {
+  width: 100%;
+  position: relative;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 0.75rem;
+  padding: 0.125rem;
+}
+
+.toggle button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #b3b3b3;
+  cursor: pointer;
+  -webkit-transition: all 0.3s 0.1s ease-in-out;
+  -moz-transition: all 0.3s 0.1s ease-in-out;
+  -o-transition: all 0.3s 0.1s ease-in-out;
+  transition: all 0.3s 0.1s ease-in-out;
+}
+
+.toggle .active {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.trending-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chain-dropdown,
+.days-dropdown {
+  position: relative;
+}
+
+.chain {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 0.75rem;
+  gap: 0.9rem;
+  padding: 0.9rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.view-all{
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chain-dropdown-menu,
+.days-dropdown-menu {
+  position: absolute;
+  left: -10px;
+  bottom: -5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 10rem;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  z-index: 2000;
+  transition: all ease 0.1s;
+}
+
+.chain-dropdown-menu li,
+.days-dropdown-menu li {
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all linear 0.3s;
+  font-weight: 600;
+}
+
+.chain-dropdown-menu li:hover,
+.days-dropdown-menu li:hover {
+  background-color: #37373798;
+}
+
+.days-dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .days-dropdown {
+    display: inline;
+  }
+
+  .trending-right > .toggle{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .chain{
+    display: none;
+  }
+}
