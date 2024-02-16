@@ -1,13 +1,11 @@
 .navbar {
+  position: fixed;
   min-width: 100%;
   padding: 0.7rem 2rem;
   display: flex;
   align-items: center;
-  position: sticky;
   top: 0;
-  z-index: 1000;
-  background-color: transparent;
-  position: relative;
+  z-index: 5000;
 }
 
 .logo {
@@ -63,7 +61,10 @@
   background-color: #1b1b1b;
   border-radius: 10px;
   z-index: 180;
-  transition: all ease 0.1s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
 .dropdown-menu li {
@@ -76,6 +77,16 @@
 
 .dropdown-menu li:hover {
   background-color: #37373798;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 100;
+  height: auto;
+}
+
+.profile-dropdown:hover .dropdown-menu {
+  height: auto;
+  opacity: 100;
 }
 
 .search-container {
@@ -152,6 +163,7 @@
   justify-content: center;
   border-radius: 0.5rem;
   cursor: pointer;
+  background-color: rebeccapurple;
 }
 
 .profile-dropdown {
@@ -193,6 +205,25 @@
   display: none;
 }
 
+.mobile-nav-menu {
+  position: absolute;
+  padding: 2rem;
+  width: 100%;
+  top: 4.5rem;
+  right: -3000px;
+  z-index: 10000;
+  background-color: rgb(37, 37, 37);
+  transition: all 0.2s ease-in;
+}
+
+.nav-menus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 1050px) {
   .backdrop {
     backdrop-filter: none;
@@ -201,6 +232,7 @@
 
   .search {
     margin-left: auto;
+    margin-right: 0.5rem;
     display: flex;
   }
 
@@ -253,5 +285,25 @@
     justify-content: center;
     border-radius: 0.5rem;
     background-color: #1b1b1b;
+  }
+
+  .show {
+    right: 0;
+  }
+
+  .mobile-nav {
+    background-color: #1b1b1b;
+  }
+
+  .mobile-nav-menu .login {
+    display: flex;
+    margin-left: 0;
+    padding: 0 0.75rem;
+    background-color: #ffffff1f;
+    backdrop-filter: blur(20px);
+  }
+
+  .mobile-nav-menu .login p {
+    display: block;
   }
 }

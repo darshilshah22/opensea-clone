@@ -76,3 +76,11 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .token-tables{
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+  }
+}

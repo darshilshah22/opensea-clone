@@ -5,14 +5,13 @@ import Hero from "./components/Hero/Hero";
 import Trending from "./components/Trending/Trending";
 import TokenTables from "./components/TokenTables/TokenTables";
 import Collections from "./components/Collections/Collections";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <div className="App">
-      <div className="header">
-        <Navbar />
-        <Hero />
-      </div>
+      <Navbar />
+      <Hero />
       <Trending />
       <TokenTables />
       <Collections title="Notable collections" />
@@ -26,6 +25,8 @@ const App = () => {
       <Collections title="Trending in Photography" />
       <Collections title="NFT 101" />
       <Collections title="Explore Categories" />
+
+      <Footer />
     </div>
   );
 };

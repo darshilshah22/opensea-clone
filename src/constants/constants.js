@@ -193,3 +193,50 @@ export const notableCollections = [
     volume: "0.51 ETH",
   },
 ];
+
+export const marketplace = [
+  "Art",
+  "Gaming",
+  "Memberships",
+  "PFPs",
+  "Photography",
+  "Music",
+];
+
+export const myAccount = [
+  "Profile",
+  "Favorites",
+  "Watchlist",
+  "Studio",
+  "OpenSea Pro",
+  "Settings",
+];
+
+export const stats = ["Rankings", "Activity"];
+
+export const resources = [
+  "Blog",
+  "Learn",
+  "Help center",
+  "Community standards",
+  "Taxes",
+  "Partners",
+  "Developer platform",
+  "Platform status",
+];
+
+export const company = ["About", "Careers", "Ventures"];
+
+export const learn = [
+  "What is an NFT?",
+  "How to buy an NFT",
+  "What are NFT drops?",
+  "How to sell an NFT using OpenSea",
+  "How to create an NFT on OpenSea",
+  "What is a crypto wallet?",
+  "What is cryptocurrency?",
+  "What are blockchain gas fees?",
+  "What is a blockchain?",
+  "What is web3?",
+  "How to stay protected in web3",
+];
