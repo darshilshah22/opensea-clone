@@ -24,6 +24,7 @@ https://openseaclone.netlify.app/
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/darshilshah22/opensea-clone/blob/main/opensea-1.png)
+![App Screenshot](https://github.com/darshilshah22/opensea-clone/blob/main/opensea-2.png)
 
 
