@@ -55,7 +55,7 @@
 
 .dropdown-menu {
   margin-top: 0.5rem;
-  padding: 0.5rem;
+  padding: 0;
   position: absolute;
   width: 10rem;
   background-color: #1b1b1b;
@@ -64,7 +64,7 @@
   opacity: 0;
   height: 0;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .dropdown-menu li {
@@ -82,11 +82,13 @@
 .dropdown:hover .dropdown-menu {
   opacity: 100;
   height: auto;
+  padding: 0.5rem;
 }
 
 .profile-dropdown:hover .dropdown-menu {
   height: auto;
   opacity: 100;
+  padding: 0.5rem;
 }
 
 .search-container {
@@ -192,12 +194,13 @@
 }
 
 .backdrop {
-  background-color: #ffffff1f;
+  background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(20px);
+  transition: all 0.1s ease;
 }
 
 .backdrop:hover {
-  background-color: hsla(0, 0%, 100%, 0.2);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .mobile-search,

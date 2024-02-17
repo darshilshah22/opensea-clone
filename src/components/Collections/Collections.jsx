@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const Collections = ({title}) => {
+const Collections = ({ title, isCategory = false, btnTitle = "View Category" }) => {
   const [collectionRef, setCollectionRef] = useState(null);
   const settings = {
     dots: false,
@@ -54,7 +54,10 @@ const Collections = ({title}) => {
 
   return (
     <div className="collections">
-      <h2>{title}</h2>
+      <div className="col-heading">
+        <h2>{title}</h2>
+        {isCategory && <button>{btnTitle}</button>}
+      </div>
       <div className="collection-list">
         <div className="controls-btn">
           <IoIosArrowBack

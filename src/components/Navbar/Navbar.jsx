@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setbgColor("black") : setbgColor("transparent");
+    window.scrollY > 10 ? setbgColor("rgb(18, 18, 18)") : setbgColor("transparent");
   };
 
   useEffect(() => {

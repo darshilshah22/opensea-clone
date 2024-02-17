@@ -29,17 +29,25 @@
   border-radius: 10px;
 }
 
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
+
 .slide-container {
   margin-top: 2rem;
   padding: 0 2rem;
   position: relative;
+  border-radius: 10px;
+}
+
+.slider-comp{
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .slide {
   width: auto;
   height: 288px;
   position: relative;
-  margin: 0 0.5rem;
   border-radius: 10px;
 }
 

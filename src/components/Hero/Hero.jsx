@@ -9,17 +9,19 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 function CustomSlide(props) {
   const { index } = props;
   return (
-    <div className="slide">
-      <div
-        key={index}
-        className="slide-image"
-        style={{
-          backgroundImage: `url(${items[index].image})`,
-        }}
-      ></div>
-      <div className="info">
-        <p className="name">{items[index].name}</p>
-        <p className="price">$350</p>
+    <div>
+      <div className="slide">
+        <div
+          key={index}
+          className="slide-image"
+          style={{
+            backgroundImage: `url(${items[index].image})`,
+          }}
+        ></div>
+        <div className="info">
+          <p className="name">{items[index].name}</p>
+          <p className="price">$350</p>
+        </div>
       </div>
     </div>
   );
@@ -77,7 +79,7 @@ const Hero = () => {
             onClick={sliderRef?.slickNext}
           />
         </div>
-        <Slider ref={setSliderRef} {...settings}>
+        <Slider ref={setSliderRef} {...settings} className="slider-comp">
           {items.map((item, index) => (
             <CustomSlide index={index} key={index} />
           ))}
