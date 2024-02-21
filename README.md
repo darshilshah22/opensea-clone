@@ -1,8 +1,32 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# OpenSea Clone
 
-Currently, two official plugins are available:
+A meticulously crafted clone of the renowned OpenSea.io platform, built entirely using ReactJS! 👨‍💻
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Tech Stack
+
+**Frontend:** ReactJS, HTML, CSS, JavaScript
+
+**vite:** https://vitejs.dev/guide/
+
+**Icon:** 
+https://react-icons.github.io/react-icons/
+
+**Image Slider:** 
+https://react-slick.neostack.com/
+## Demo
+
+https://openseaclone.netlify.app/
+
+
+## Screenshots
+
+![App Screenshot](https://github.com/darshilshah22/opensea-clone/blob/main/opensea-1.png)
+![App Screenshot](https://github.com/darshilshah22/opensea-clone/blob/main/opensea-2.png)
+![App Screenshot](https://github.com/darshilshah22/opensea-clone/blob/main/opensea-3.png)
+![App Screenshot](https://github.com/darshilshah22/opensea-clone/blob/main/opensea-4.png)
+
+
