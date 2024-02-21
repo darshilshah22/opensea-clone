@@ -1,0 +1,168 @@
+.drops {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url("https://i.seadn.io/s/primary-drops/0x6fd8e343c107a24bd6b8ac19b56d9aeb967c0131/31471821:about:media:05e6d6b4-b617-4098-8d8b-eba594bfcbe1.png?auto=format&dpr=1&w=1500")
+    center center / cover no-repeat;
+  overflow: hidden;
+  margin: 3rem 0;
+  border-radius: 12px;
+  position: relative;
+  z-index: -1;
+}
+
+.banner_glass {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.content_icon img {
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}
+
+.content_title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.content_by {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.content_stats {
+  margin-top: 8px;
+  font-size: 1rem;
+  display: flex;
+  font-weight: 600;
+}
+
+.content_stats span::before {
+  content: "• ";
+  margin-left: 1rem;
+}
+
+.content_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 24px;
+}
+
+.blur_bg {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.view_drop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  margin-top: 24px;
+}
+
+.view_drop p {
+  height: 60px;
+  padding: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.other_drops {
+  margin-bottom: 3rem;
+}
+
+.drop_tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.drop_tabs p {
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upcoming,
+.past {
+  color: #b3b3b3;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.drop_tabs p:hover {
+  color: #fff;
+}
+
+.drops_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.drop-items{
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 590px){
+  .content{
+    padding: 1rem;
+  }
+}

@@ -29,6 +29,7 @@ function CustomSlide(props) {
 
 const Hero = () => {
   const [sliderRef, setSliderRef] = useState(null);
+  const [catIndex, setCatIndex] = useState(0);
   const settings = {
     dots: false,
     speed: 1000,
@@ -61,7 +62,7 @@ const Hero = () => {
     <div className="hero">
       <ul className="hero-categories">
         {categories.map((category, index) => (
-          <li className={`${index === 0 ? "active" : ""}`} key={index}>
+          <li className={`${index === catIndex ? "active" : ""}`} key={category} onClick={() => setCatIndex(index)}>
             <a href="#">{category}</a>
           </li>
         ))}

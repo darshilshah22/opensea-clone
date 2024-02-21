@@ -5,8 +5,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Cards from "../../containers/Cards/Cards";
 
-const Collections = ({ title, isCategory = false, btnTitle = "View Category" }) => {
+const Collections = ({
+  title,
+  isCategory = false,
+  btnTitle = "View Category",
+}) => {
   const [collectionRef, setCollectionRef] = useState(null);
   const settings = {
     dots: false,
@@ -74,14 +79,7 @@ const Collections = ({ title, isCategory = false, btnTitle = "View Category" }) 
         <Slider ref={setCollectionRef} {...settings}>
           {notableCollections.map((e, index) => (
             <div className="items" key={index}>
-              <div className="collection-card">
-                <img src={e.image} alt="" />
-                <div className="text-content">
-                  <h4>ELESAPIEN ERC-404</h4>
-                  <p>Floor</p>
-                  <p>0.04 ETH</p>
-                </div>
-              </div>
+              <Cards image={e.image}/>
             </div>
           ))}
         </Slider>

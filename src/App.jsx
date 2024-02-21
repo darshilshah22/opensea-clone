@@ -1,32 +1,31 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Trending from "./components/Trending/Trending";
-import TokenTables from "./components/TokenTables/TokenTables";
-import Collections from "./components/Collections/Collections";
-import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import { Route, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./components/Layout";
+import Drops from "./components/Drops/Drops";
 
 const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <Home />,
+        },
+        {
+          path: "/drops",
+          element: <Drops />
+        }
+      ],
+    },
+  ]);
+
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Trending />
-      <TokenTables />
-      <Collections title="Notable collections" />
-      <Collections title="Top Collector Buys Today" />
-      <Collections title="Black History Month Spotlight" />
-      <Collections title="Trending in Art" isCategory={true}/>
-      <Collections title="Trending in Gaming" isCategory={true}/>
-      <Collections title="Trending in Memberships" isCategory={true}/>
-      <Collections title="Trending in Music" isCategory={true}/>
-      <Collections title="Trending in PFPs" isCategory={true}/>
-      <Collections title="Trending in Photography" isCategory={true}/>
-      <Collections title="NFT 101" isCategory={true} btnTitle="Learn more"/>
-      <Collections title="Explore Categories" />
-
-      <Footer />
+      <RouterProvider router={router}/>
     </div>
   );
 };

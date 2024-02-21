@@ -4,6 +4,7 @@ import { IoMdSearch, IoIosArrowBack, IoMdClose } from "react-icons/io";
 import { MdWallet, MdOutlineShoppingCart } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileSearch, setIsMobileSearch] = useState(false);
@@ -22,7 +23,9 @@ const Navbar = () => {
   };
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setbgColor("rgb(18, 18, 18)") : setbgColor("transparent");
+    window.scrollY > 10
+      ? setbgColor("rgb(18, 18, 18)")
+      : setbgColor("transparent");
   };
 
   useEffect(() => {
@@ -67,30 +70,32 @@ const Navbar = () => {
         className={`navbar ${isMobileMenu ? "mobile-nav" : ""}`}
         style={{ backgroundColor: bgColor }}
       >
-        <div className="logo">
+        <Link to="/" className="logo">
           <img
             src="https://opensea.io/static/images/logos/opensea-logo.svg"
             alt=""
           />
           <h1>OpenSea</h1>
-        </div>
+        </Link>
         <div className="divider" />
         <ul className="nav-menu">
           <li className="dropdown drops-menu">
-            <a href="#" className="drop-link">
+            <Link to="/drops" className="drop-link">
               Drops
-            </a>
-            <ul className="dropdown-menu drops">
+            </Link>
+            <ul className="dropdown-menu">
               <li>
-                <a href="#">Featured</a>
+                <Link to="/drops">Featured</Link>
               </li>
               <li>
-                <a href="#">Learn More</a>
+                <Link to="/drops">Learn More</Link>
               </li>
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Stats</a>
+            <Link to="/stats" className="drop-link">
+              Stats
+            </Link>
             <div className="dropdown-menu">
               <ul>
                 <li>
@@ -103,7 +108,7 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <a href="#">Create</a>
+            <a href="#" className="drop-link">Create</a>
           </li>
         </ul>
         <div

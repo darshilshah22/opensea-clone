@@ -33,3 +33,8 @@ button{
 ::-webkit-scrollbar{
   display: none;
 }
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+}
