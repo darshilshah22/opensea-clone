@@ -1,0 +1,52 @@
+.collection_stats {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.tabs {
+  margin-top: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabs p {
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #b3b3b3;
+  transition: all 0.2s ease;
+}
+
+.tabs p:hover {
+  color: #fff;
+}
+
+.tabs .active {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.all_categories{
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.days{
+  margin-left: auto;
+}
+
+.stat_tables{
+  width: 100%;
+  position: relative;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+}

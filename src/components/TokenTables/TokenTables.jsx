@@ -4,7 +4,7 @@ import { tokens } from "../../constants/constants";
 
 const TokenTables = () => {
   return (
-    <div className="token-tables">
+    <div className="token-tables tables">
       <ul className="table1">
         <li className="table-header">
           <div className="col col-1">Rank</div>

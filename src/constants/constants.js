@@ -240,3 +240,304 @@ export const learn = [
   "What is web3?",
   "How to stay protected in web3",
 ];
+
+export const statTypes = ["Trending", "Top", "Watchlist"];
+
+export const colCategories = [
+  "All categories",
+  "Art",
+  "Gaming",
+  "Memberships",
+  "PFPs",
+  "Domain Names",
+  "Music",
+  "Sports collectibles",
+  "Virtual Worlds",
+];
+
+export const allChains = [
+  "All chains",
+  "Arbitrum",
+  "Avalanche",
+  "BNB Chain",
+  "Base",
+  "Ethereum",
+  "Klaytn",
+  "Optimism",
+  "Polygon",
+  "Solana",
+  "Zora",
+];
+
+export const collectionStats = [
+  {
+    srno: 1,
+    img: "https://i.seadn.io/gcs/files/c6cb0b1d6f2ab61c0efacf00e62e2230.jpg?auto=format&dpr=1&w=128",
+    name: "DeGods",
+    change: "+4,421%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 91
+  },
+  {
+    srno: 2,
+    img: "https://i.seadn.io/s/raw/files/0b6b937e62ff764713c2961af0b5e80b.png?auto=format&dpr=1&w=128",
+    name: "Persona",
+    change: "-70%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 91
+  },
+  {
+    srno: 3,
+    img: "https://i.seadn.io/gcs/files/c0b7dfed5908126d92877c00470ee72a.png?auto=format&dpr=1&w=128",
+    name: "Lasogette",
+    change: "+802%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 49
+  },
+  {
+    srno: 4,
+    img: "https://i.seadn.io/s/raw/files/9941c1eb0163d5e8ec4c1f89d729359c.gif?auto=format&dpr=1&w=128",
+    name: "RG Bytes",
+    change: "+348%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 21
+  },
+  {
+    srno: 5,
+    img: "https://i.seadn.io/s/raw/files/f1e23f33b637cc4318a9439798180ee5.jpg?auto=format&dpr=1&w=128",
+    name: "Rosentica: Starfall Travelers",
+    change: "+23%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 14
+  },
+  {
+    srno: 6,
+    img: "https://i.seadn.io/s/raw/files/b57b3add82515bbf81b7a61e149d151f.png?auto=format&dpr=1&w=128",
+    name: "LULU",
+    change: "-10%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 13
+  },
+  {
+    srno: 7,
+    img: "https://i.seadn.io/gae/ju6vDR0sbEvqT0bAb4QPEzYMzpReEllDZ5MlICtxqJu76G5UrZ0cT-w6X3Mzf9e8KXZXJGNIyXGDRAoL-qlaApiJsj27ZdbOY5VvCA?auto=format&dpr=1&w=128",
+    name: "Wassies by Wassies",
+    change: "+329%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 12
+  },
+  {
+    srno: 8,
+    img: "https://i.seadn.io/s/raw/files/5db9f7d7dce87a4d77079464d00702d2.png?auto=format&dpr=1&w=128",
+    name: "Hungrybera",
+    change: "+62%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 11
+  },
+  {
+    srno: 9,
+    img: "https://i.seadn.io/gcs/files/4bce6187fea476154b311dafaf327c89.png?auto=format&dpr=1&w=128",
+    name: "Moonbirds",
+    change: "-10%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 10
+  },
+  {
+    srno: 10,
+    img: "https://i.seadn.io/gcs/files/11570389cac190891fea96fe285cbf01.png?auto=format&dpr=1&w=128",
+    name: "Sappy Seals",
+    change: "+4,421%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 9
+  },
+  {
+    srno: 11,
+    img: "https://i.seadn.io/gcs/files/c6cb0b1d6f2ab61c0efacf00e62e2230.jpg?auto=format&dpr=1&w=128",
+    name: "DeGods",
+    change: "+4,421%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 91
+  },
+  {
+    srno: 12,
+    img: "https://i.seadn.io/s/raw/files/0b6b937e62ff764713c2961af0b5e80b.png?auto=format&dpr=1&w=128",
+    name: "Persona",
+    change: "-70%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 91
+  },
+  {
+    srno: 13,
+    img: "https://i.seadn.io/gcs/files/c0b7dfed5908126d92877c00470ee72a.png?auto=format&dpr=1&w=128",
+    name: "Lasogette",
+    change: "+802%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 49
+  },
+  {
+    srno: 14,
+    img: "https://i.seadn.io/s/raw/files/9941c1eb0163d5e8ec4c1f89d729359c.gif?auto=format&dpr=1&w=128",
+    name: "RG Bytes",
+    change: "+348%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 21
+  },
+  {
+    srno: 15,
+    img: "https://i.seadn.io/s/raw/files/f1e23f33b637cc4318a9439798180ee5.jpg?auto=format&dpr=1&w=128",
+    name: "Rosentica: Starfall Travelers",
+    change: "+23%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 14
+  },
+  {
+    srno: 16,
+    img: "https://i.seadn.io/s/raw/files/b57b3add82515bbf81b7a61e149d151f.png?auto=format&dpr=1&w=128",
+    name: "LULU",
+    change: "-10%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 13
+  },
+  {
+    srno: 17,
+    img: "https://i.seadn.io/gae/ju6vDR0sbEvqT0bAb4QPEzYMzpReEllDZ5MlICtxqJu76G5UrZ0cT-w6X3Mzf9e8KXZXJGNIyXGDRAoL-qlaApiJsj27ZdbOY5VvCA?auto=format&dpr=1&w=128",
+    name: "Wassies by Wassies",
+    change: "+329%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 12
+  },
+  {
+    srno: 18,
+    img: "https://i.seadn.io/s/raw/files/5db9f7d7dce87a4d77079464d00702d2.png?auto=format&dpr=1&w=128",
+    name: "Hungrybera",
+    change: "+62%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 11
+  },
+  {
+    srno: 19,
+    img: "https://i.seadn.io/gcs/files/4bce6187fea476154b311dafaf327c89.png?auto=format&dpr=1&w=128",
+    name: "Moonbirds",
+    change: "-10%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 10
+  },
+  {
+    srno: 20,
+    img: "https://i.seadn.io/gcs/files/11570389cac190891fea96fe285cbf01.png?auto=format&dpr=1&w=128",
+    name: "Sappy Seals",
+    change: "+4,421%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 9
+  },
+  {
+    srno: 21,
+    img: "https://i.seadn.io/gcs/files/c6cb0b1d6f2ab61c0efacf00e62e2230.jpg?auto=format&dpr=1&w=128",
+    name: "DeGods",
+    change: "+4,421%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 91
+  },
+  {
+    srno: 22,
+    img: "https://i.seadn.io/s/raw/files/0b6b937e62ff764713c2961af0b5e80b.png?auto=format&dpr=1&w=128",
+    name: "Persona",
+    change: "-70%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 91
+  },
+  {
+    srno: 23,
+    img: "https://i.seadn.io/gcs/files/c0b7dfed5908126d92877c00470ee72a.png?auto=format&dpr=1&w=128",
+    name: "Lasogette",
+    change: "+802%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 49
+  },
+  {
+    srno: 24,
+    img: "https://i.seadn.io/s/raw/files/9941c1eb0163d5e8ec4c1f89d729359c.gif?auto=format&dpr=1&w=128",
+    name: "RG Bytes",
+    change: "+348%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 21
+  },
+  {
+    srno: 25,
+    img: "https://i.seadn.io/s/raw/files/f1e23f33b637cc4318a9439798180ee5.jpg?auto=format&dpr=1&w=128",
+    name: "Rosentica: Starfall Travelers",
+    change: "+23%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 14
+  },
+  {
+    srno: 26,
+    img: "https://i.seadn.io/s/raw/files/b57b3add82515bbf81b7a61e149d151f.png?auto=format&dpr=1&w=128",
+    name: "LULU",
+    change: "-10%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 13
+  },
+  {
+    srno: 27,
+    img: "https://i.seadn.io/gae/ju6vDR0sbEvqT0bAb4QPEzYMzpReEllDZ5MlICtxqJu76G5UrZ0cT-w6X3Mzf9e8KXZXJGNIyXGDRAoL-qlaApiJsj27ZdbOY5VvCA?auto=format&dpr=1&w=128",
+    name: "Wassies by Wassies",
+    change: "+329%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 12
+  },
+  {
+    srno: 28,
+    img: "https://i.seadn.io/s/raw/files/5db9f7d7dce87a4d77079464d00702d2.png?auto=format&dpr=1&w=128",
+    name: "Hungrybera",
+    change: "+62%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 11
+  },
+  {
+    srno: 29,
+    img: "https://i.seadn.io/gcs/files/4bce6187fea476154b311dafaf327c89.png?auto=format&dpr=1&w=128",
+    name: "Moonbirds",
+    change: "-10%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 10
+  },
+  {
+    srno: 30,
+    img: "https://i.seadn.io/gcs/files/11570389cac190891fea96fe285cbf01.png?auto=format&dpr=1&w=128",
+    name: "Sappy Seals",
+    change: "+4,421%",
+    floorprice: "0.08 ETH",
+    volume: "35 ETH",
+    sales: 9
+  },
+];
