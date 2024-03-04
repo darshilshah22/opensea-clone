@@ -1,0 +1,119 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  max-height: 90vh;
+  background-color: #202020;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.close_btn{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.modal_container img {
+  height: 90px;
+  width: 90px;
+}
+
+.modal_header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal_header p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.modal_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.625rem 0.75rem;
+  margin-top: 1.5rem;
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+.modal_input input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.modal_input .modal_arrow {
+  background-color: rgb(32, 129, 226);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 100%;
+  color: #b3b3b3;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding-bottom: 1.25rem;
+}
+
+.or .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.wallet_options{
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.wallet_options li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.wallet_options li:last-child{
+  border-bottom: none;
+}
+
+.wallet_options li img{
+  height: 30px;
+  width: 30px;
+}
+
+.wallet_options p{
+  font-weight: 600;
+}

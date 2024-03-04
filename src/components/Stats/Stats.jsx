@@ -5,17 +5,18 @@ import {
   colCategories,
   collectionStats,
   statTypes,
-  tokens,
 } from "../../constants/constants";
 import Dropdown from "../../containers/Dropdown/Dropdown";
 import DaysToggle from "../../containers/DaysToggle/DaysToggle";
 import { HiOutlineStar } from "react-icons/hi";
+import useModalOpen from "../../context/modalContext";
 
 const Stats = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isChainDropdownOpen, setIsChainDropdownOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const { setOpenModal } = useModalOpen();
 
   useEffect(() => {
     if (activeTab === 0) {
@@ -32,7 +33,13 @@ const Stats = () => {
         {statTypes.map((type, index) => (
           <p
             className={`${activeTab === index ? "active" : ""}`}
-            onClick={() => setActiveTab(index)}
+            onClick={() => {
+              if (index === statTypes.length - 1) {
+                setOpenModal(true);
+              } else {
+                setActiveTab(index);
+              }
+            }}
             key={type}
           >
             {type}
@@ -80,7 +87,7 @@ const Stats = () => {
               <div className="col col-4">{token.floorprice}</div>
               <div className="col col-4">{token.sales}</div>
               <div className="col col-4">
-                <HiOutlineStar size={32}/>
+                <HiOutlineStar size={32} />
               </div>
             </li>
           ))}

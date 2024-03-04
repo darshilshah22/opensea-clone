@@ -14,7 +14,6 @@
 }
 
 body {
-  /* max-width: 1400px; */
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
@@ -25,12 +24,12 @@ a {
   color: #fff;
 }
 
-button{
+button {
   border: 0;
   background-color: transparent;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 

@@ -5,6 +5,7 @@ import { MdWallet, MdOutlineShoppingCart } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaBars } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import useModalOpen from "../../context/modalContext";
 
 const Navbar = () => {
   const [isMobileSearch, setIsMobileSearch] = useState(false);
@@ -13,6 +14,8 @@ const Navbar = () => {
   const [search, setSearch] = useState("");
   const [bgColor, setbgColor] = useState("transparent");
   const inputRef = useRef(null);
+
+  const {setOpenModal} = useModalOpen();
 
   const handleKeyPress = (event) => {
     if (event.keyCode === 191) {
@@ -108,7 +111,7 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <a href="#" className="drop-link">Create</a>
+            <a href="#" className="drop-link" onClick={() => setOpenModal(true)}>Create</a>
           </li>
         </ul>
         <div
@@ -130,7 +133,7 @@ const Navbar = () => {
         >
           <IoMdSearch size={24} className="icon" />
         </div>
-        <div className="login backdrop">
+        <div className="login backdrop" onClick={() => setOpenModal(true)}>
           <MdWallet size={24} className="icon" />
           <p>Login</p>
         </div>
