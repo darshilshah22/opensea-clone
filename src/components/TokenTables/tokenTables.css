@@ -38,13 +38,13 @@
   font-weight: 600;
 }
 
-.table-row .col-2 {
+.table-row .col-2, .mobile-col {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.col-2 img {
+.col-2 img, .mobile-col img {
   width: 70px;
   height: 70px;
   border-radius: 10px;
@@ -82,5 +82,10 @@
     overflow: scroll;
     justify-content: center;
     align-items: center;
+  }
+
+  .col-2 img, .mobile-col img {
+    height: 50px;
+    width: 50px;
   }
 }

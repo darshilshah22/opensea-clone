@@ -4,6 +4,7 @@ import {
   allChains,
   colCategories,
   collectionStats,
+  days,
   statTypes,
 } from "../../constants/constants";
 import Dropdown from "../../containers/Dropdown/Dropdown";
@@ -15,6 +16,7 @@ const Stats = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isChainDropdownOpen, setIsChainDropdownOpen] = useState(false);
+  const [isDayDropdownOpen, setIsDayDropdownOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const { setOpenModal } = useModalOpen();
 
@@ -28,7 +30,7 @@ const Stats = () => {
 
   return (
     <div className="collection_stats">
-      <p className="title">Collection stats</p>
+      <p className="mobile title">Collection stats</p>
       <div className="stat_types tabs">
         {statTypes.map((type, index) => (
           <p
@@ -62,11 +64,19 @@ const Stats = () => {
         />
         <div className="days">
           <DaysToggle selectedIndex={selectedIndex} />
+          <div className="mobile">
+            <Dropdown
+              title="1h"
+              list={days}
+              isDropdownOpen={isDropdownOpen}
+              setIsDropdownOpen={setIsDayDropdownOpen}
+            />
+          </div>
         </div>
       </div>
       <div className="stat_tables">
         <ul className="table1">
-          <li className="table-header">
+          <li className="table-header desktop">
             <div className="col">#</div>
             <div className="col col-2">Collection</div>
             <div className="col col-3">Volume</div>
@@ -75,21 +85,45 @@ const Stats = () => {
             <div className="col col-4">Sales</div>
             <div className="col col-4"></div>
           </li>
+          <li className="table-header mobile">
+            <div className="mobile-col">#</div>
+            <div className="mobile-col col-1">Collection</div>
+            <div className="mobile-col col-2">Volume</div>
+            <div className="mobile-col"></div>
+          </li>
           {collectionStats.map((token, index) => (
-            <li className="table-row" key={index}>
-              <div className="col">{token.srno}</div>
-              <div className="col col-2">
-                <img src={token.img} alt="" />
-                <p>{token.name}</p>
-              </div>
-              <div className="col col-3">{token.volume}</div>
-              <div className="col col-4">{token.change}</div>
-              <div className="col col-4">{token.floorprice}</div>
-              <div className="col col-4">{token.sales}</div>
-              <div className="col col-4">
-                <HiOutlineStar size={32} />
-              </div>
-            </li>
+            <>
+              <li className="table-row desktop" key={index}>
+                <div className="col">{token.srno}</div>
+                <div className="col col-2">
+                  <img src={token.img} alt="" />
+                  <p>{token.name}</p>
+                </div>
+                <div className="col col-3">{token.volume}</div>
+                <div className="col col-4">{token.change}</div>
+                <div className="col col-4">{token.floorprice}</div>
+                <div className="col col-4">{token.sales}</div>
+                <div className="col col-4 star">
+                  <HiOutlineStar size={32} />
+                </div>
+              </li>
+              <li className="table-row mobile" key={index}>
+                <div className="mobile-col">{token.srno}</div>
+                <div className="mobile-col col-1">
+                  <img src={token.img} alt="" />
+                  <p>
+                    {token.name}{" "}
+                    <span>
+                      <span>Floor Price:</span> {token.floorprice}
+                    </span>
+                  </p>
+                </div>
+                <div className="mobile-col col-2">{token.volume}</div>
+                <div className="mobile-col star">
+                  <HiOutlineStar size={32} />
+                </div>
+              </li>
+            </>
           ))}
         </ul>
       </div>

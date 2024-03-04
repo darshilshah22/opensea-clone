@@ -39,6 +39,7 @@
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
+  text-align: center;
 }
 
 .modal_header p {
@@ -116,4 +117,22 @@
 
 .wallet_options p{
   font-weight: 600;
+}
+
+@media screen and (max-width: 950px){
+  .modal_container{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .modal_container{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .modal_container{
+    width: 100%;
+  }
 }
